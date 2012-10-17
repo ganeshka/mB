@@ -1,4 +1,5 @@
 mB
 ==
 
-mB Application
+mB Application.
+This is a sample application.
