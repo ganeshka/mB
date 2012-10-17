@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Bank</title>
+<style>
+canvas {
+	border: 1px solid black;
+}
+</style>
+<script>
+	function validateCredentials() {
+		alert("Hello");
+		var username = document.getElementsById("username");
+		var password = document.getElementById("password");
+		alert(username);
+		alert(password);
+		if (username == "ganeshka") {
+			if (password != "welcome1") {
+				alert('Access denied');
+			}
+		} else {
+			alert('Access denied');
+		}
+	}
+</script>
+</head>
+<body>
+	<header>
+		<font size="6" color="red"><b>myBank</b></font>
+	</header>
+	<div>
+		<font color="red"><b>My Bank</b></font>
+	</div>
+	<form action="home.html" method="link">
+		<label for="username">Username:</label> <input type="text"
+			name="username" id="username" required placeholder="username" /><br>
+		<label for="password">Password:</label> <input type="password"
+			name="password" id="password" required placeholder="password" /> <br>
+		<input type="submit" name="submit" onclick="validateCredentials()" value="Login" />
+	</form>
+	<script type="text/javascript"></script>
+</body>
+</html>
